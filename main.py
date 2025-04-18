@@ -10,10 +10,10 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from mdserge import MdSerge
+from carparkingtool import CarParkingTool
 
-__CHANNEL_USERNAME__ = "CPMMDSERGE"
-__GROUP_USERNAME__   = "CPMMdSergeChat"
+__CHANNEL_USERNAME__ = "cpmflankertool"
+__GROUP_USERNAME__   = "cpmflankertool1"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -38,7 +38,7 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = figlet_format('MDserge', font='starwars')
+    brand_name = figlet_format('CPMFlanker', font='starwars')
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)",
     ]
@@ -131,7 +131,7 @@ if __name__ == "__main__":
         acc_password = prompt_valid_value("[bold][?] Account Password[/bold]", "Password", password=False)
         acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
         console.print("[bold cyan][%] Trying to Login[/bold cyan]: ", end=None)
-        cpm = MdSerge(acc_access_key)
+        cpm = CarParkingTool(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
