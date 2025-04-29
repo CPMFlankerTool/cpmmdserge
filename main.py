@@ -323,11 +323,11 @@ if __name__ == "__main__":
             print(Colorate.Horizontal(Colors.yellow_to_red, '{31}: Custom Car Brake         2.000'))
             print(Colorate.Horizontal(Colors.yellow_to_red, '{0} : Exit'))
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ CPM CHEATS  ]==============='))
+            print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ BEEKEEPER  ]==============='))
             
             service = IntPrompt.ask(f"[bold][?] Select a Service [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
             
-            print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ CPM CHEATS  ]==============='))
+            print(Colorate.Horizontal(Colors.yellow_to_red, '===============[ BEEKEEPER ]==============='))
             
             if service == 0: # Exit
                 print(Colorate.Horizontal(Colors.yellow_to_red, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
