@@ -198,7 +198,6 @@ def load_player_data(cpm):
             
         else:
             print(Colorate.Horizontal(Colors.yellow_to_red, '! ERROR: new accounts most be signed-in to the game at least once !.'))
-            exit(1)
     else:
         print(Colorate.Horizontal(Colors.yellow_to_red, '! ERROR: seems like your login is not properly set !.'))
         exit(1)
